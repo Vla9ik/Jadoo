@@ -2502,6 +2502,13 @@ body::after {
 }
 
 @media (max-width: 40.625em) {
+  .menu-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .subscribe__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2511,13 +2518,6 @@ body::after {
 }
 
 @media (max-width: 31.25em) {
-  .menu-footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .menu-footer__list {
     padding-top: 0.9375rem;
   }
