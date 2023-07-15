@@ -524,6 +524,9 @@ body::after {
   top: 0;
   left: 0;
   z-index: 50;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__container {
@@ -536,6 +539,9 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__logo {
@@ -557,7 +563,7 @@ body::after {
 }
 
 .header._header-scroll {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(224, 205, 205, 0.85);
 }
 
 .menu__body {
@@ -577,7 +583,7 @@ body::after {
   top: 0;
   left: -100%;
   width: 100%;
-  height: 3.75rem;
+  height: 4.375rem;
   position: fixed;
   background-color: #654545;
   -webkit-transition: left 0.3s;
@@ -1961,7 +1967,7 @@ body::after {
 
 @media (min-width: 61.99875em) {
   .header._header-scroll .header__container {
-    min-height: 4.375rem;
+    min-height: 6.25rem;
   }
 
   .footer__copy {
@@ -2280,7 +2286,7 @@ body::after {
   }
 
   .header__container {
-    min-height: 4.375rem;
+    min-height: 6.25rem;
   }
 
   .menu__body {
@@ -2370,7 +2376,7 @@ body::after {
   }
 
   .header__container {
-    min-height: 2.5rem;
+    min-height: 4.375rem;
   }
 
   .menu__body {
