@@ -1346,15 +1346,15 @@ body::after {
 }
 
 .destinations__item:nth-child(2) {
-  -webkit-transition-delay: 1.2s;
-       -o-transition-delay: 1.2s;
-          transition-delay: 1.2s;
+  -webkit-transition-delay: 0.85s;
+       -o-transition-delay: 0.85s;
+          transition-delay: 0.85s;
 }
 
 .destinations__item:nth-child(3) {
-  -webkit-transition-delay: 1.6s;
-       -o-transition-delay: 1.6s;
-          transition-delay: 1.6s;
+  -webkit-transition-delay: 0.9s;
+       -o-transition-delay: 0.9s;
+          transition-delay: 0.9s;
 }
 
 .item-destination {
@@ -2750,7 +2750,7 @@ body::after {
     position: fixed;
     overflow: auto;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: -100%;
     background-color: #fff;
