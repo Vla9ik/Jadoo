@@ -1222,6 +1222,10 @@ body::after {
   gap: 2.1875rem;
 }
 
+.services__item {
+  cursor: pointer;
+}
+
 .item-services {
   opacity: 0;
   visibility: hidden;
@@ -1231,14 +1235,18 @@ body::after {
   -webkit-transition: all 0.8s;
   -o-transition: all 0.8s;
   transition: all 0.8s;
+}
+
+.item-services__body {
+  padding: 0rem 3.125rem 2.8125rem 3.125rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 9.375rem;
   grid-template-rows: 9.375rem;
+  position: relative;
+  z-index: 10;
   grid-auto-rows: auto;
   text-align: center;
-  padding: 0rem 3.125rem 2.8125rem 3.125rem;
-  position: relative;
 }
 
 .item-services._watcher-view {
@@ -1256,34 +1264,15 @@ body::after {
 }
 
 .item-services:nth-child(3) {
-  -webkit-transition-delay: 1.3s;
-       -o-transition-delay: 1.3s;
-          transition-delay: 1.3s;
+  -webkit-transition-delay: 1.15s;
+       -o-transition-delay: 1.15s;
+          transition-delay: 1.15s;
 }
 
 .item-services:nth-child(4) {
-  -webkit-transition-delay: 1.6s;
-       -o-transition-delay: 1.6s;
-          transition-delay: 1.6s;
-}
-
-.item-services::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  width: 6.25rem;
-  height: 6.25rem;
-  -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  background-color: #df6951;
-  border-radius: 1.875rem 0rem 0.625rem;
-  z-index: -1;
-  -webkit-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
+  -webkit-transition-delay: 1.25s;
+       -o-transition-delay: 1.25s;
+          transition-delay: 1.25s;
 }
 
 .item-services__icon {
@@ -1313,6 +1302,25 @@ body::after {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.625;
+}
+
+.item-services::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  width: 6.25rem;
+  height: 6.25rem;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  background-color: #df6951;
+  border-radius: 1.875rem 0rem 0.625rem;
+  z-index: -1;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .destinations__header {
@@ -1792,6 +1800,7 @@ body::after {
 }
 
 .testimonials__dots .swiper-pagination-bullet {
+  cursor: pointer;
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -2513,7 +2522,7 @@ body::after {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .item-services {
+  .item-services__body {
     -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
             box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
     border-radius: 2.25rem;
@@ -3274,7 +3283,7 @@ body::after {
     background-color: #c8533c;
   }
 
-  .item-services:hover {
+  .item-services__body:hover {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
